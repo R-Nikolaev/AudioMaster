@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!--Fonts-->
+    <link rel="preload" href="fonts/gilroy-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-extrabold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gilroy-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <script defer src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Акустика Pride Ruby AIR 6,5</title>
+</head>
+
+<div class="page" id="page">
+    <!-- header -->
+    <header class="header">
+    
+        <!--HEADER TOP-->
+    
+        <div class="header__top">
+            <div class="header__top--left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subvav" href="#">Оплата</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__top--center">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="contact.html">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="journal.html">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Установка</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__top--right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--whats">
+                            <img class="nav__icon" src="assets/images/svg/whats.svg" alt="">
+                            <a class="nav__link whatsapp" href="signin.html">WhatsApp</a>
+                        </li>
+                        <li class="nav__item nav__item--tel">
+                            <img class="nav__icon" src="assets/images/svg/tel.svg" alt="">
+                            <a class="nav__link  tel" href="tel: +79393999998">+7 (939) 399-99-98</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button type="button" class="btn btn--bcall" data-modal="contact-modal">Обратный звонок </button>
+        </div>
+    
+        <!--HEADER MID-->
+    
+        <div class="header__mid">
+            <div class="header__mid--left">
+                <a class="nav__link" href="index.html"> <img class="nav__logo" src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="header__mid--center ">
+                <button type="button" class="btn btn--catalog" id="burger">
+                    <img src="assets/images/svg/burger.svg" alt="">
+                    <span>Каталог</span>
+                </button>
+                <nav class="burger__menu">
+                    <ul class="burger__list" id="burger-menu">
+                        <li>
+                            <a class="burger__link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="burger__link" href="card.html">Карточка товара
+                            </a>
+                        </li>
+                        <li>
+                            <a class="burger__link" href="journal.html">Журнал</a>
+                        </li>
+                        <li>
+                            <a class="burger__link" href="post.html">Новости</a>
+                        </li>
+                        <li>
+                            <a class="burger__link" href="registration.html">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="card.html" method="get">
+                    <input class="search__input" type="text" />
+                    <button class="btn--search"><img src="assets/images/svg/search.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="header__mid--right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <a href="#">
+                            <li class="nav__item nav__item--cabinet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z" />
+                                </svg>
+                                <span>Статус заказа</span>
+                            </li>
+                        </a>
+                        <a href="registration.html">
+                            <li class="nav__item nav__item--cabinet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z" />
+                                </svg>
+                                <span>Войти</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__item nav__item--cabinet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M5 19h-4v-8h4v8zm6 0h-4v-18h4v18zm6 0h-4v-12h4v12zm6 0h-4v-4h4v4zm1 2h-24v2h24v-2z" />
+                                </svg>
+                                <span>Сравнение</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__item nav__item--cabinet">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero" />
+                                </svg>
+                                <span>Избранное</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__item nav__item--cabinet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M19.029 13h2.971l-.266 1h-2.992l.287-1zm.863-3h2.812l.296-1h-2.821l-.287 1zm-.576 2h4.387l.297-1h-4.396l-.288 1zm2.684-9l-.743 2h-1.929l-3.474 12h-11.239l-4.615-11h14.812l-.564 2h-11.24l2.938 7h8.428l3.432-12h4.194zm-14.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm5.9-7-.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z" />
+                                </svg>
+                                <span>Корзина</span>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <!--HEADER BOTTOM-->
+    
+        <div class="header__bottom">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--catalog" href="#">Автозвук</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link--catalog" href="#">Шумоизоляция</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link--catalog" href="#">Питание (АКБ,генераторы)</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link--catalog" href="#">Парковочные радары</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link--catalog" href="#">Охранные системы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="intro--card">
+            <img class="intro--card__img" src="assets/images/intro-card.jpg" alt="">
+            <div class="intro--card__content">
+                <p class="intro--card__content__text">Эстрадная акустика</p>
+            </div>
+        </div>
+        <div class=" container">
+<!--PATH-->
+<div class="path">
+    <p>
+        <a href="#">Домой </a>-
+        <a href="#">Автозвук </a>-
+        <a href="#">Акустика </a>-
+        <a href="#">Эстрадная акустика </a>-
+        <a href="#">Акустика Pride Ruby AIR 6,5</a>
+    </p>
+</div>
+
+<!--CARD-->
+<div class="card">
+    <div class="card__image">
+
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper swiper-wrapper--card">
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-1.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-2.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-3.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination--card"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper swiper-wrapper--card">
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-1.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-2.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide--card">
+                    <img src="assets/images/card/card-3.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next--card swiper-navBtn--card swiper-navBtn--card--next"></div>
+            <div class="swiper-button-prev swiper-button-prev--card swiper-navBtn--card swiper-navBtn--card--prev"></div>
+        </div>
+
+
+    </div>
+    <div class="card__content">
+        <h2 class="title--card">Акустика Pride Ruby AIR 6,5</h2>
+        <p class="card__content__code">Код товара: 6984</p>
+        <p class="card__content__stock">
+            <span><img src="assets/images/svg/yes.svg" alt=""> В наличии: 125 шт.</span>
+            <img class="icon--card" src="assets/images/svg/srav-2.svg" alt="">
+            <img class="icon--card" src="assets/images/svg/like.svg" alt="">
+            <img class="icon--card" src="assets/images/svg/share.svg" alt="">
+            <span>Поделиться:
+                <a href="#"><img class="icon--card" src="assets/images/svg/vk-2.svg" alt=""></a>
+                <a href="#"><img class="icon--card" src="assets/images/svg/telegram.svg" alt=""></a>
+            </span>
+        </p>
+        <div class="card__content__atribut">
+            <div class="card__content__atribut__name">
+                <ul>
+                    <li>Максимальная частота</li>
+                    <li>Материал магнитной системы</li>
+                    <li>Минимальная частота</li>
+                    <li>Монтажная глубина</li>
+                    <li>Монтажный диаметр</li>
+                    <li><a class="link--blue" href="#">Все характеристики</a></li>
+                </ul>
+            </div>
+            <div class="card__content__atribut__index">
+                <ul>
+                    <li>10 000 Гц</li>
+                    <li>Гибридная магнитная система</li>
+                    <li>125 Гц</li>
+                    <li>65 мм</li>
+                    <li>150 мм</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card__content__desc">
+            <p> Pride Ruby AIR 6,5 - новые среднечастотные динамики от Pride. Модель отличается высоким качеством звука и имеет цельный алюминиевый радиатор МС.</p>
+            <a class="link--blue" href="#">Все товары Pride Car Audi</a>
+            <img class="card__content__desc__brand" src="assets/images/brand/pride.png" alt="">
+            <p class="card__content__desc__brand__country">Россия</p>
+            <ul>
+                <li class="card__content__desc__service"> <img src="assets/images/svg/shield-2.svg" alt="">
+                    <span>Установка</span>
+                </li>
+
+                <li class="card__content__desc__service"> <img src="assets/images/svg/setting.svg" alt="">
+                    <span>Гарантия</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="card__buy">
+        <div class="card__buy__buy">
+            <p class="card__buy__buy__price">3 250 ₽</p>
+            <div class='count_box'>
+                <div class="minus">-</div>
+                <input class='inp_price' type="text" value="1" />
+                <div class="plus">+</div>
+            </div>
+            <button class="btn btn--order">Добавить в корзину</button>
+            <a class="link--blue" href="#">Купить в 1 клик</a>
+        </div>
+        <div class="card__buy__credit">
+            <button class="btn btn--tinkoff"><img src="assets/images/svg/tinkoff-2.svg" alt="">Купить в кредит</button>
+            <button class="btn btn--sberbank"><img src="assets/images/svg/sberbank-2.svg" alt="">Покупай со Сбером</button>
+        </div>
+        <div class="card__buy__order">
+            <h3 class="card__buy_order__title">Способы получения заказа</h3>
+            <ul class="card__buy_order__desc">
+                <li><span>Самовывоз</span> сегодня и позже, бесплатно</li>
+                <li>Забрать из Почты России начиная с 20.03, от 275 руб.</li>
+                <li><span>Доставка</span> начиная с 23.03, бесплатно</li>
+            </ul>
+            <button class="btn btn--order">Рассчитать доставку</button>
+        </div>
+    </div>
+</div>
+
+<!--RELATED PRODUCTS-->
+<div class="related_products">
+    <div class="related_products__item">
+        <h3 class="title--card-subtitle">Наборы</h3>
+        <div class="related_products__item__section">
+            <h2 class="related_products__item__section__title">Бюджетный громкий фронт</h2>
+            <ul class="related_products__item__section__content">
+                <li class="related_products__item__section__content__item">
+                    <img src="assets/images/svg/nabor-1.svg" alt="">
+                    <p>Усилитель AudioNova AA150.2 </p>
+                </li>
+                <li class="related_products__item__section__content__item">
+                    <img src="assets/images/svg/nabor-2.svg" alt="">
+                    <p>Pride Ruby Light 6.5</p>
+                </li>
+                <li class="related_products__item__section__content__item--total">
+                    <p>x 2 комплекта</p>
+                    <p>Всего: 7 920 ₽ </p>
+                </li>
+                <li>
+                    <a class="link--blue-related_products" href="">Посмотреть набор</a>
+                    <a class="link--arrow" href=""></a>
+                </li>
+            </ul>
+            <p class="link--circle"><a class="link--circle-arrow" href=""></a></p>
+        </div>
+    </div>
+    <div class="related_products__item">
+        <h3 class="title--card-subtitle">Аксессуары</h3>
+        <div class="related_products__item__section">
+            <h2 class="related_products__item__section__title">Проставочные кольца</h2>
+            <ul class="related_products__item__section__content">
+                <li class="related_products__item__section__content__item">
+                    <img src="assets/images/svg/acces-1.svg" alt="">
+                    <span>
+                        <p>520 ₽</p>
+                        <p>Кольца модельные с пропиткой DRIVE 310 16,5-20 для Toyota </p>
+                    </span>
+                </li>
+                <li class="related_products__item__section__content__item">
+                    <img src="assets/images/svg/acces-2.svg" alt="">
+                    <span>
+                        <p>585 ₽</p>
+                        <p>Кольца модельные DRIVE 302 16,5-36 для Ford </p>
+                    </span>
+                </li>
+                <li class="related_products__item__section__content__item">
+                    <img src="assets/images/svg/acces-3.svg" alt="">
+                    <span>
+                        <p>546 ₽</p>
+                        <p>Кольца модельные с пропиткой DRIVE 305 16,5-25 для Hyundai ...</p>
+                    </span>
+                </li>
+                <li>
+                    <a class="link--blue-related_products" href="">Посмотреть набор</a>
+                    <a class="link--arrow" href=""></a>
+                </li>
+            </ul>
+            <p class="link--circle"><a class="link--circle-arrow" href=""></a></p>
+        </div>
+    </div>
+</div>
+
+<!--DESCRIPTION CARD-->
+<div class="description_card">
+    <h3 class="title--card-subtitle">О товаре</h3>
+    <p class="description_card__text">Pride Ruby AIR 6,5 - новые среднечастотные динамики от Pride. Модель отличается высоким качеством звука и имеет цельный алюминиевый радиатор МС. Компания PRIDE® была создана в 2013 году. Основным толчком к развитию и выходу на арену Российской авто звуковой индустрии был энтузиазм создателей компании. Этому послужило стремление сделать качественный продукт с честными характеристиками.</p>
+    <h3 class="description_card__title title--card-subtitle">Характеристики</h3>
+    <div class="card__content__atribut">
+        <div class="card__content__atribut__name description_card__atribut__name">
+            <ul>
+                <li>Максимальная частота . . . . . . . . . . . . . . . . . . . .</li>
+                <li>Материал магнитной системы . . . . . . . . . . . . .</li>
+                <li>Минимальная частота . . . . . . . . . . . . . . . . . . . . .</li>
+                <li>Монтажная глубина . . . . . . . . . . . . . . . . . . . . . . .</li>
+                <li>Монтажный диаметр . . . . . . . . . . . . . . . . . . . . . .</li>
+                <li>Номинальная мощность . . . . . . . . . . . . . . . . . . .</li>
+                <li>Номинальное сопротивление . . . . . . . . . . . . . .</li>
+                <li>Номинальный диаметр . . . . . . . . . . . . . . . . . . . . </li>
+            </ul>
+        </div>
+        <div class="card__content__atribut__index">
+            <ul>
+                <li>10 000 Гц</li>
+                <li>Гибридная магнитная система</li>
+                <li>125 Гц</li>
+                <li>65 мм</li>
+                <li>150 мм</li>
+                <li>100 Вт</li>
+                <li>4 ОМ</li>
+                <li>6.5"(16,5см)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card__content__atribut--mobile">
+        <div class="card__content__atribut--mobile__item">
+            <h2>Максимальная частота</h2>
+            <p>10 000 Гц</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Материал магнитной системы</h2>
+            <p>Гибридная магнитная система</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Минимальная частота</h2>
+            <p>125 Гц</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Монтажная глубина</h2>
+            <p>65 мм</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Монтажный диаметр</h2>
+            <p>150 мм</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Номинальная мощность</h2>
+            <p>100 Вт</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Номинальное сопротивление</h2>
+            <p>4 ОМ</p>
+        </div>
+        <div class="card__content__atribut--mobile__item">
+            <h2>Номинальный диаметр</h2>
+            <p>6.5"(16,5см)</p>
+        </div>
+    </div>
+    <div class="description_card__atribut__advantage">
+        <p>Среднечастотный динамик</p>
+        <p>100 Вт</p>
+        <p>Pride Car Audio </p>
+    </div>
+</div>
+
+<!--ADDITIONAL PRODUCT-->
+<div class="additional_product">
+    <h3 class="title--card-subtitle">С этим товаром покупают</h3>
+    <div class="offers__content">
+        <div class="offers__item">
+            <img class="offers__item__img" src="assets/images/offers/offer-1.jpg" alt="">
+            <p class="offers__item__name">Магнитола Aura AMH-77DSP </p>
+            <p class="offers__item__sell">Купили более 10 раз</p>
+            <p class="offers__item__price">520 ₽</p>
+            <div class="offers__item__footer">
+                <img class="icon--offers" src="assets/images/svg/shop-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/srav-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/like.svg" alt="">
+            </div>
+        </div>
+        <div class="offers__item">
+            <img class="offers__item__img" src="assets/images/offers/offer-2.jpg" alt="">
+            <p class="offers__item__name">Акустика Pride Solo Mini 6,5 </p>
+            <p class="offers__item__sell">Купили более 150 раз</p>
+            <p class="offers__item__price">3750 ₽</p>
+            <div class="offers__item__footer">
+                <img class="icon--offers" src="assets/images/svg/shop-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/srav-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/like.svg" alt="">
+            </div>
+        </div>
+        <div class="offers__item">
+            <img class="offers__item__img" src="assets/images/offers/offer-3.jpg" alt="">
+            <p class="offers__item__name">Акустика Pride Solo v.3 (в комплекте OVERBOOST) </p>
+            <p class="offers__item__sell">Купили более 100 раз</p>
+            <p class="offers__item__price">8000 ₽</p>
+            <div class="offers__item__footer">
+                <img class="icon--offers" src="assets/images/svg/shop-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/srav-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/like.svg" alt="">
+            </div>
+        </div>
+        <div class="offers__item">
+            <img class="offers__item__img" src="assets/images/offers/offer-1.jpg" alt="">
+            <p class="offers__item__name">Магнитола Aura AMH-77DSP </p>
+            <p class="offers__item__sell">Купили более 10 раз</p>
+            <p class="offers__item__price">520 ₽</p>
+            <div class="offers__item__footer">
+                <img class="icon--offers" src="assets/images/svg/shop-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/srav-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/like.svg" alt="">
+            </div>
+        </div>
+        <div class="offers__item">
+            <img class="offers__item__img" src="assets/images/offers/offer-2.jpg" alt="">
+            <p class="offers__item__name">Акустика Pride Solo Mini 6,5 </p>
+            <p class="offers__item__sell">Купили более 150 раз</p>
+            <p class="offers__item__price">3750 ₽</p>
+            <div class="offers__item__footer">
+                <img class="icon--offers" src="assets/images/svg/shop-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/srav-2.svg" alt="">
+                <img class="icon--offers" src="assets/images/svg/like.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--COMPARE PRODUCT-->
+<div class="compare_product">
+    <h3 class="title--card-subtitle">С этим товаром покупают</h3>
+    <div class="compare_product__row">
+        <div class="compare_product__item">
+            <div class="compare_product__item__header related_products__item__section__content__item">
+                <img src="assets/images/svg/compare-1.svg" alt="">
+                <span>
+                    <p>13 000 ₽ </p>
+                    <p>Акустика Pride Diamond 10</p>
+                </span>
+            </div>
+            <div class="compare_product__item__mid card__content__atribut">
+                <div class="card__content__atribut__name
+               compare_product__item__mid__name">
+                    <ul>
+                        <li>Максимальная частота</li>
+                        <li>Минимальная частота</li>
+                        <li>Монтажная глубина</li>
+                        <li>Монтажный диаметр</li>
+                    </ul>
+                </div>
+                <div class="card__content__atribut__index
+               compare_product__item__mid__index">
+                    <ul>
+                        <li>10 000 Гц</li>
+                        <li>125 Гц</li>
+                        <li>65 мм</li>
+                        <li>150 мм</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="compare_product__item__footer">
+                <a class="link--blue" href="#">Перейти к товару</a>
+            </div>
+        </div>
+        <div class="compare_product__item">
+            <div class="compare_product__item__header related_products__item__section__content__item">
+                <img src="assets/images/svg/compare-2.svg" alt="">
+                <span>
+                    <p>2 750 ₽ </p>
+                    <p>Акустика Pride Onyx 5 v.2</p>
+                </span>
+            </div>
+            <div class="compare_product__item__mid card__content__atribut">
+                <div class="card__content__atribut__name
+               compare_product__item__mid__name">
+                    <ul>
+                        <li>Максимальная частота</li>
+                        <li>Минимальная частота</li>
+                        <li>Монтажная глубина</li>
+                        <li>Монтажный диаметр</li>
+                    </ul>
+                </div>
+                <div class="card__content__atribut__index
+               compare_product__item__mid__index">
+                    <ul>
+                        <li>10 000 Гц</li>
+                        <li>125 Гц</li>
+                        <li>65 мм</li>
+                        <li>150 мм</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="compare_product__item__footer">
+                <a class="link--blue" href="#">Перейти к товару</a>
+            </div>
+        </div>
+        <div class="compare_product__item">
+            <div class="compare_product__item__header related_products__item__section__content__item">
+                <img src="assets/images/svg/compare-3.svg" alt="">
+                <span>
+                    <p>8 000 ₽ </p>
+                    <p>Акустика Pride Solo v.3 (в комплекте OVERBOOST</p>
+                </span>
+            </div>
+            <div class="compare_product__item__mid card__content__atribut">
+                <div class="card__content__atribut__name
+               compare_product__item__mid__name">
+                    <ul>
+                        <li>Максимальная частота</li>
+                        <li>Минимальная частота</li>
+                        <li>Монтажная глубина</li>
+                        <li>Монтажный диаметр</li>
+                    </ul>
+                </div>
+                <div class="card__content__atribut__index
+               compare_product__item__mid__index">
+                    <ul>
+                        <li>10 000 Гц</li>
+                        <li>125 Гц</li>
+                        <li>65 мм</li>
+                        <li>150 мм</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="compare_product__item__footer">
+                <a class="link--blue" href="#">Перейти к товару</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ADVANTAGE-->
+<div class="advantage">
+    <h3 class="title--card-subtitle">Наши преимущества</h3>
+    <div class="advantage__row">
+        <div class="advantage__item">
+            <img src="assets/images/svg/delivery-1.svg" alt="">
+            <span>
+                <h4>Бесплатная доставка</h4>
+                <p>При заказе от 10000 руб.</p>
+            </span>
+        </div>
+        <div class="advantage__item">
+            <img src="assets/images/svg/credit_card-1.svg" alt="">
+            <span>
+                <h4>Рассрочка</h4>
+                <p>Беспроцентный кредит</p>
+            </span>
+        </div>
+        <div class="advantage__item">
+            <img src="assets/images/svg/volume-1.svg" alt="">
+            <span>
+                <h4>Широкий ассортимент</h4>
+                <p>В наличии и на заказ</p>
+            </span>
+        </div>
+        <div class="advantage__item">
+            <img src="assets/images/svg/chat-1.svg" alt="">
+            <span>
+                <h4>Консультация экспертов </h4>
+                <p>Подбор компонентов</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!--NEWS-->
+<div class="news">
+    <div class="news__header">
+        <h3 class="title--card-subtitle">Новости</h3>
+        <a class="link--blue" href="">Все новости</a>
+    </div>
+    <div class="news__content">
+        <a class="news__content__item" href="">
+            <img src="assets/images/news/news-1.jpg" alt="">
+            <p>Новинки</p>
+            <h4>Новинка от Pride Car Audio - акустика Harmony 5C</h4>
+        </a>
+        <a class="news__content__item" href="">
+            <img src="assets/images/news/news-2.jpg" alt="">
+            <p>наши работы</p>
+            <h4>Шумоизоляция Kia Proceed</h4>
+        </a>
+        <a class="news__content__item" href="">
+            <img src="assets/images/news/news-3.jpg" alt="">
+            <p>Новинки</p>
+            <h4>Аудиосистема в Lada Vesta</h4>
+        </a>
+    </div>
+</div>
+
+<!--WATCHED-->
+<div class="watched">
+    <h3 class="title--card-subtitle">Вы смотрели</h3>
+    <div class="watched__row">
+        <div class="watched__col">
+            <div class="compare_product__item__header related_products__item__section__content__item
+           watched__row__item">
+                <img src="assets/images/svg/compare-1.svg" alt="">
+                <span>
+                    <p>13 000 ₽ </p>
+                    <p>Акустика Pride Diamond 10</p>
+                </span>
+            </div>
+            <div class="compare_product__item__header related_products__item__section__content__item
+           watched__row__item">
+                <img src="assets/images/svg/compare-1.svg" alt="">
+                <span>
+                    <p>2 750 ₽ </p>
+                    <p>Акустика Pride Onyx 5 v.2</p>
+                </span>
+            </div>
+        </div>
+        <div class="watched__col">
+            <div class="compare_product__item__header related_products__item__section__content__item
+           watched__row__item">
+                <img src="assets/images/svg/compare-1.svg" alt="">
+                <span>
+                    <p>8 000 ₽ </p>
+                    <p>Акустика Pride Solo v.3 (в комплекте OVERBOOST</p>
+                </span>
+            </div>
+            <div class="compare_product__item__header related_products__item__section__content__item
+           watched__row__item">
+                <img src="assets/images/svg/compare-1.svg" alt="">
+                <span>
+                    <p>13 000 ₽ </p>
+                    <p>Акустика Pride Diamond 10</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--QUESTION-->
+<div class="question--orange">
+    <div class="question__left">
+        <img class="question__logo" src="assets/images/svg/quest.svg" alt="">
+    </div>
+    <div class="question__center">
+        <h2 class="question__title">Как выбрать? Посоветуйся с экспертом!</h2>
+        <p class="question__text">Задайте вопрос нашим специалистам прямо сейчас там, где вам удобно </p>
+    </div>
+    <div class="question__right">
+        <img class="icon--question" src="assets/images/svg/whats-2.svg" alt="">
+        <img class="icon--question" src="assets/images/svg/telegram.svg" alt="">
+        <img class="icon--question" src="assets/images/svg/email-2.svg" alt="">
+    </div>
+</div>
+
+</div>
+        <footer class="footer">
+            <div class="footer--desktop">
+                <div class="footer__top">
+                    <div class="info">
+                        <div class="info__item">
+                            <img class="nav__logo info__logo" src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="info__item">
+                            <span class="info__item__title">Забрать заказ можно по адресу: <br>г.Казань,ул.Пр.Ямышева,336</span>
+                            <span>Пн.- Пт. 10:00 - 19:00 <br>Сб. - Вс. 10:00 - 17:00</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__item__title">Аудиомастер в соц.сетях</span>
+                            <div class="social">
+                                <a class="social__icon" href="#"><img src="assets/images/svg/vk.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/youtube.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/insta.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__item__title">Читайте отзывы о нас</span>
+                            <div class="social">
+                                <a class="social__icon" href="#"><img src="assets/images/svg/vk.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/youtube.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/insta.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="footer__nav">
+                        <li class="footer__col">
+                            <p class="footer__col__title has-subnav">Audiomaster</p>
+                            <ul class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">О компании</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Акции</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Видеобзоры</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__col">
+                            <p class="footer__col__title has-subnav">Интернет-магазин</p>
+                            <ul class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">Оплата</a></li>
+                                <li><a class="footer__subnav__link" href="#">Доставка</a></li>
+                                <li><a class="footer__subnav__link" href="#">Гарантия</a></li>
+                                <li><a class="footer__subnav__link" href="#">Частые вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__col">
+                            <p class="footer__col__title has-subnav">Каталог товаров</p>
+                            <ul class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">Автозвук</a></li>
+                                <li><a class="footer__subnav__link" href="#">Шумоизоляция</a></li>
+                                <li><a class="footer__subnav__link" href="#">Питание(АКБ,генераторы)</a></li>
+                                <li><a class="footer__subnav__link" href="#">Автосигнализация</a></li>
+                                <li><a class="footer__subnav__link" href="#">Парковочные радары</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__col">
+                            <p class="footer__col__title has-subnav">Контакты</p>
+                            <ul class="footer__subnav footer__subnav--left">
+                                <li>
+                                    <a class="footer__subnav__link" href="tel:78432256355"> <img class="social__footer" src="assets/images/svg/tel-2.svg" alt="">+7 843 225-63-55 <br>(магазин)</a>
+                                </li>
+                                <li>
+                                    <a class="footer__subnav__link" href="tel:79393999998">+7 (939) 399-99-98 <br>(интернет-магазин)</a>
+                                </li>
+                                <li>
+                                    <a class="footer__subnav__link" href="tel:78432900144"><img class="social__footer" src="assets/images/svg/setting-2.svg" alt=""> +7 843 290-01-44 <br>(установ. центр)</a>
+                                </li>
+                                <li>
+                                    <a class="footer__subnav__link" href="mailto:info@audiomastershop.ru"><img class="social__footer" src="assets/images/svg/email.svg" alt="">info@audiomastershop.ru </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="footer__pay">
+                        <div class="footer__pay__cash">
+                            <p>Принимаем к оплате</p>
+                            <span><img src="assets/images/svg/mastercard.svg" alt="">
+                                <img src="assets/images/svg/visa.svg" alt=""></span>
+                        </div>
+                        <div class="footer__pay__credit">
+                            <p>Рассрочка и кредит</p>
+                            <span><img src="assets/images/svg/sberbank-2.svg" alt="">
+                                <img src="assets/images/svg/tinkoff-2.svg" alt="">
+                                <img src="assets/images/svg/credit-3.svg" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <span class="footer__center">Политика конфиденциальности© <br> 2010-2021 AUDIOMASTER</span>
+        
+                <div class="footer__bottom">
+                    <span>Сайт не является публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ и носит исключительно информационный характер. Производитель оставляет за собой право изменять характеристики товара, его внешний вид и комплектность без предварительного уведомления продавца.
+                        Я даю свое согласие интернет-магазину "Audiomaster" (ИП Хуснутдинов Азат Наилевич ИНН: 165703447949 ОГРНИП: 318169000046648) на обработку моих персональных данных, в соответствии с федеральным законом от 27.07.2006 N152 ФЗ «О персональных данных», на условиях целей, определенных Политикой конфиденциальности.</span>
+                </div>
+            </div>
+            <div class="footer--mobile">
+                <div class="footer__top">
+                    <div class="info">
+                        <div class="info__item">
+                            <img class="nav__logo info__logo" src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="info__item">
+                            <span class="info__item__title">
+                                Забрать заказ можно по адресу: г.Казань, ул.Пр.Ямышева,336 </span>
+                            <span>Пн.- Пт. 10:00 - 19:00 <br>Сб. - Вс. 10:00 - 17:00</span>
+                        </div>
+                    </div>
+                    <ul class="footer__nav">
+                        <li class="footer__col">
+                            <p data-path="one" class="footer__col__title has-subnav">Audiomaster</p>
+                            <ul data-target="one" class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">О компании</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Акции</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Видеобзоры</a></li>
+        
+                                <li><a class="footer__subnav__link" href="#">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__col">
+                            <p data-path="two" class="footer__col__title has-subnav">Интернет-магазин</p>
+                            <ul data-target="two" class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">Оплата</a></li>
+                                <li><a class="footer__subnav__link" href="#">Доставка</a></li>
+                                <li><a class="footer__subnav__link" href="#">Гарантия</a></li>
+                                <li><a class="footer__subnav__link" href="#">Частые вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__col">
+                            <p data-path="three" class="footer__col__title has-subnav">Каталог товаров</p>
+                            <ul data-target="three" class="footer__subnav">
+                                <li><a class="footer__subnav__link" href="#">Автозвук</a></li>
+                                <li><a class="footer__subnav__link" href="#">Шумоизоляция</a></li>
+                                <li><a class="footer__subnav__link" href="#">Питание(АКБ,генераторы)</a></li>
+                                <li><a class="footer__subnav__link" href="#">Автосигнализация</a></li>
+                                <li><a class="footer__subnav__link" href="#">Парковочные радары</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <div class="footer__pay">
+                        <div class="footer__pay__cash">
+                            <p>Принимаем к оплате</p>
+                            <span><img src="/assets/images/svg/mastercard.svg" alt="">
+                                <img src="/assets/images/svg/visa.svg" alt=""></span>
+                        </div>
+                        <div class="footer__pay__credit">
+                            <p>Рассрочка и кредит</p>
+                            <span><img src="/assets/images/svg/sberbank-2.svg" alt="">
+                                <img src="/assets/images/svg/tinkoff-2.svg" alt="">
+                                <img src="/assets/images/svg/credit-3.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <div class="info__item">
+                            <span class="info__item__title">Аудиомастер в соц.сетях</span>
+                            <div class="social">
+                                <a class="social__icon" href="#"><img src="assets/images/svg/vk.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/youtube.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/insta.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__item__title">Читайте отзывы о нас</span>
+                            <div class="social">
+                                <a class="social__icon" href="#"><img src="assets/images/svg/vk.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/youtube.svg" alt=""></a>
+                                <a class="social__icon" href="#"><img src="assets/images/svg/insta.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="footer__center">Политика конфиденциальности© <br> 2010-2021 AUDIOMASTER</span>
+            </div>
+        </footer>
+    </main>
+</div>
+
+</html>
